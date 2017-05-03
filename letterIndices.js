@@ -1,17 +1,17 @@
 function letterIndices(string) {
   var result = {};
-  var stringnospaces = string
-  for (i = 0; i < stringnospaces.length; i++) {
-    targetletter = stringnospaces.charAt(i);
-    if (result[targetletter]) {
-      result[targetletter].push(i)
-    } else {
-      result[targetletter] = [i]
-    }
+  for (i = 0; i < string.length; i++) {
+    targetletter = string.charAt(i);
+    result[targetletter] = result[targetletter] || [];
+    result[targetletter].push(i);
   }
   if (result[" "]) {
-    delete result[" "]
+    delete result[" "];
   }
-  return result
+  return result;
 }
 
+
+
+
+console.log(letterIndices("lighthouse in the house"));
