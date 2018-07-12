@@ -1,4 +1,4 @@
-
+$(window).load(function(){  
 Highcharts.chart('container', {
     chart: {
         type: 'area'
@@ -72,3 +72,4 @@ Highcharts.chart('container', {
         ]
     }]
 });
+})
