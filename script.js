@@ -39,7 +39,8 @@ $(document).ready(function() {
                         return 'Day '+ Highcharts.numberFormat(this.value/48, 0);
                         }
                     },
-                    tickInterval:48
+                    tickInterval:48,
+                    reversed: true
                 },
                 yAxis: {
                     title: {
