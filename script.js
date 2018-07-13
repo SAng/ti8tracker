@@ -61,12 +61,14 @@ $(document).ready(function() {
                 },
                 xAxis: {
                     labels: {
+                        title: {
+                            text: 'Days Left'
+                        },
                         formatter: function() {
-                        return 'Day '+ Highcharts.numberFormat(this.value/48, 0);
+                        return  Highcharts.numberFormat((5256 - this.value)/48, 0);
                         }
                     },
-                    tickInterval:48,
-                    reversed: true
+                    tickInterval:48
                 },
                 yAxis: {
                     title: {
