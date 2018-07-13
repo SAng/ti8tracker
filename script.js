@@ -64,6 +64,7 @@ $(document).ready(function() {
                         title: {
                             text: 'Days Left'
                         },
+                        min: "0",
                         formatter: function() {
                         return  Highcharts.numberFormat((5256 - this.value)/48, 0);
                         }
